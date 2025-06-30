@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Heal Thumbnail Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .thumbnail-preview {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        .download-btn {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        .format-options {
+            margin: 20px 0;
+        }
+        .format-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .format-btn:hover, .format-btn.active {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Sound Heal Thumbnail Generator</h1>
+        <p>Beautiful, animated thumbnail for your emotional healing app</p>
+        
+        <div class="thumbnail-preview">
+            <object data="/thumbnail.svg" type="image/svg+xml" width="100%" height="auto">
+                <img src="/thumbnail.svg" alt="Sound Heal Thumbnail" style="max-width: 100%; height: auto;">
+            </object>
+        </div>
+        
+        <div class="format-options">
+            <h3>Choose Your Format:</h3>
+            <button class="format-btn active" onclick="setFormat('svg')">SVG (Vector)</button>
+            <button class="format-btn" onclick="setFormat('png')">PNG (1200x630)</button>
+            <button class="format-btn" onclick="setFormat('jpg')">JPG (1200x630)</button>
+        </div>
+        
+        <button class="download-btn" onclick="downloadThumbnail()">
+            📥 Download Thumbnail
+        </button>
+        
+        <div class="info">
+            <h3>✨ Features:</h3>
+            <ul>
+                <li><strong>Animated Elements:</strong> Breathing circles, floating musical notes, and sound waves</li>
+                <li><strong>Perfect Dimensions:</strong> 1200x630px - ideal for social media and web use</li>
+                <li><strong>Professional Design:</strong> Gradient backgrounds with healing colors</li>
+                <li><strong>Brand Consistent:</strong> Matches your Sound Heal app aesthetic</li>
+                <li><strong>Multiple Formats:</strong> SVG for web, PNG/JPG for social media</li>
+            </ul>
+        </div>
+        
+        <div class="info">
+            <h3>🎯 Perfect For:</h3>
+            <ul>
+                <li>Social media posts (Facebook, Twitter, LinkedIn)</li>
+                <li>Website headers and banners</li>
+                <li>App store screenshots</li>
+                <li>Marketing materials</li>
+                <li>Blog post featured images</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let currentFormat = 'svg';
+        
+        function setFormat(format) {
+            currentFormat = format;
+            // Update active button
+            document.querySelectorAll('.format-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+        
+        function downloadThumbnail() {
+            if (currentFormat === 'svg') {
+                // Download SVG directly
+                const link = document.createElement('a');
+                link.href = '/thumbnail.svg';
+                link.download = 'sound-heal-thumbnail.svg';
+                link.click();
+            } else {
+                // Convert SVG to PNG/JPG using canvas
+                convertAndDownload(currentFormat);
+            }
+        }
+        
+        function convertAndDownload(format) {
+            const svg = document.querySelector('object').contentDocument.documentElement;
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = 1200;
+            canvas.height = 630;
+            
+            const img = new Image();
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+            
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, 1200, 630);
+                
+                const mimeType = format === 'png' ? 'image/png' : 'image/jpeg';
+                const quality = format === 'jpg' ? 0.9 : undefined;
+                
+                canvas.toBlob(function(blob) {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = `sound-heal-thumbnail.${format}`;
+                    link.click();
+                    
+                    URL.revokeObjectURL(url);
+                    URL.revokeObjectURL(link.href);
+                }, mimeType, quality);
+            };
+            
+            img.src = url;
+        }
+    </script>
+</body>
+</html>
