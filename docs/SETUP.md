@@ -426,9 +426,9 @@ style(ui): improve button hover states
 ## 📞 Support
 
 ### Getting Help
-- **Documentation**: Check `/docs` folder
-- **Issues**: [GitHub Issues](https://github.com/yourusername/sound-heal/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/sound-heal/discussions)
+- **Documentation**: Check `/docs` folder for detailed guides
+- **Email**: lochanacharya0@gmail.com
+- **Website**: [soundheal.online](https://soundheal.online)
 
 ### Reporting Bugs
 Include the following information:
