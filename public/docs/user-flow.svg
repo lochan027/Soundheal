@@ -1,0 +1,463 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="startGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="actionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="endGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1f2937">
+    Sound Heal User Journey Flow
+  </text>
+  
+  <!-- Start: Landing Page -->
+  <ellipse cx="150" cy="120" rx="80" ry="40" fill="url(#startGradient)" filter="url(#shadow)"/>
+  <text x="150" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    User Arrives
+  </text>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Landing Page
+  </text>
+  
+  <!-- Step 1: Read Welcome -->
+  <rect x="300" y="80" width="160" height="80" rx="15" fill="url(#processGradient)" filter="url(#shadow)"/>
+  <text x="380" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    Read Welcome Message
+  </text>
+  <text x="380" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    "A safe space to share"
+  </text>
+  <text x="380" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    "your feelings..."
+  </text>
+  <text x="380" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">
+    API Keys Notice (if missing)
+  </text>
+  
+  <!-- Step 2: Input Feelings -->
+  <rect x="520" y="80" width="160" height="80" rx="15" fill="url(#actionGradient)" filter="url(#shadow)"/>
+  <text x="600" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    Share Feelings
+  </text>
+  <text x="600" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Type in textarea
+  </text>
+  <text x="600" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    (500 char limit)
+  </text>
+  <text x="600" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">
+    Click "Share Your Heart"
+  </text>
+  
+  <!-- Step 3: AI Processing -->
+  <rect x="740" y="80" width="160" height="80" rx="15" fill="url(#processGradient)" filter="url(#shadow)"/>
+  <text x="820" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    AI Analysis
+  </text>
+  <text x="820" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Perplexity AI processes
+  </text>
+  <text x="820" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    emotion detection
+  </text>
+  <text x="820" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">
+    Loading spinner shown
+  </text>
+  
+  <!-- Step 4: Response Generation -->
+  <rect x="960" y="80" width="160" height="80" rx="15" fill="url(#processGradient)" filter="url(#shadow)"/>
+  <text x="1040" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    Content Curation
+  </text>
+  <text x="1040" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Fetch mood image
+  </text>
+  <text x="1040" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Select healing song
+  </text>
+  <text x="1040" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">
+    Parallel API calls
+  </text>
+  
+  <!-- Response Display Section -->
+  <rect x="50" y="220" width="1300" height="200" rx="20" fill="white" stroke="#e5e7eb" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">
+    Multi-Modal Healing Response
+  </text>
+  
+  <!-- Response Components -->
+  <rect x="80" y="270" width="200" height="120" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="180" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    Mood Image
+  </text>
+  <text x="180" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    Unsplash API
+  </text>
+  <text x="180" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    Emotion-appropriate
+  </text>
+  <text x="180" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    visual content
+  </text>
+  <text x="180" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#92400e" opacity="0.7">
+    Fallback: /life.jpg
+  </text>
+  <text x="180" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#92400e" opacity="0.7">
+    Error handling
+  </text>
+  
+  <rect x="300" y="270" width="200" height="120" rx="10" fill="#ddd6fe" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#5b21b6">
+    Comfort Message
+  </text>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#5b21b6">
+    AI-generated
+  </text>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#5b21b6">
+    empathetic response
+  </text>
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#5b21b6">
+    "Your feelings are valid"
+  </text>
+  <text x="400" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#5b21b6" opacity="0.7">
+    Fallback: Local responses
+  </text>
+  <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#5b21b6" opacity="0.7">
+    Pattern matching
+  </text>
+  
+  <rect x="520" y="270" width="200" height="120" rx="10" fill="#dcfce7" stroke="#10b981" stroke-width="1"/>
+  <text x="620" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">
+    Emotion Detection
+  </text>
+  <text x="620" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    Primary emotion
+  </text>
+  <text x="620" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    identification
+  </text>
+  <text x="620" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    "You're feeling sad"
+  </text>
+  <text x="620" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#065f46" opacity="0.7">
+    10 emotion categories
+  </text>
+  <text x="620" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#065f46" opacity="0.7">
+    Contextual analysis
+  </text>
+  
+  <rect x="740" y="270" width="200" height="120" rx="10" fill="#fce7f3" stroke="#ec4899" stroke-width="1"/>
+  <text x="840" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#be185d">
+    Song Recommendation
+  </text>
+  <text x="840" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#be185d">
+    Curated music therapy
+  </text>
+  <text x="840" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#be185d">
+    based on emotion
+  </text>
+  <text x="840" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#be185d">
+    YouTube link provided
+  </text>
+  <text x="840" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d" opacity="0.7">
+    Local music database
+  </text>
+  <text x="840" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d" opacity="0.7">
+    Emotion-song mapping
+  </text>
+  
+  <rect x="960" y="270" width="200" height="120" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+  <text x="1060" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">
+    Breathing Exercise
+  </text>
+  <text x="1060" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    4-7-8 pattern guide
+  </text>
+  <text x="1060" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    "Breathe With Me"
+  </text>
+  <text x="1060" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    Always available
+  </text>
+  <text x="1060" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e" opacity="0.7">
+    Web Audio API
+  </text>
+  <text x="1060" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e" opacity="0.7">
+    Visual + Audio sync
+  </text>
+  
+  <!-- User Interaction Paths -->
+  <text x="700" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#374151">
+    User Interaction Paths
+  </text>
+  
+  <!-- Path 1: Breathing Exercise -->
+  <rect x="50" y="500" width="400" height="150" rx="15" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+    🧘‍♂️ Breathing Exercise Path
+  </text>
+  
+  <circle cx="100" cy="560" r="25" fill="#0284c7"/>
+  <text x="100" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Click
+  </text>
+  <text x="100" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">
+    "Breathe With Me"
+  </text>
+  
+  <circle cx="200" cy="560" r="25" fill="#0284c7"/>
+  <text x="200" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Guide
+  </text>
+  <text x="200" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">
+    4-7-8 Pattern
+  </text>
+  
+  <circle cx="300" cy="560" r="25" fill="#0284c7"/>
+  <text x="300" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Track
+  </text>
+  <text x="300" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">
+    Cycles
+  </text>
+  
+  <circle cx="400" cy="560" r="25" fill="#0284c7"/>
+  <text x="400" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Calm
+  </text>
+  <text x="400" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e">
+    Relaxation
+  </text>
+  
+  <text x="250" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    Features: Visual circle animation, breathing sounds, cycle counter
+  </text>
+  <text x="250" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#0c4a6e" opacity="0.7">
+    Duration: 2-10 minutes • Always available • No API required
+  </text>
+  
+  <!-- Path 2: Music Therapy -->
+  <rect x="500" y="500" width="400" height="150" rx="15" fill="#fce7f3" stroke="#ec4899" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#be185d">
+    🎵 Music Therapy Path
+  </text>
+  
+  <circle cx="550" cy="560" r="25" fill="#ec4899"/>
+  <text x="550" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    View
+  </text>
+  <text x="550" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d">
+    Song Suggestion
+  </text>
+  
+  <circle cx="650" cy="560" r="25" fill="#ec4899"/>
+  <text x="650" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Click
+  </text>
+  <text x="650" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d">
+    YouTube Link
+  </text>
+  
+  <circle cx="750" cy="560" r="25" fill="#ec4899"/>
+  <text x="750" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Listen
+  </text>
+  <text x="750" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d">
+    Healing Music
+  </text>
+  
+  <circle cx="850" cy="560" r="25" fill="#ec4899"/>
+  <text x="850" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Heal
+  </text>
+  <text x="850" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d">
+    Sound Therapy
+  </text>
+  
+  <text x="700" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#be185d">
+    Features: Emotion-matched songs, YouTube integration, curated playlists
+  </text>
+  <text x="700" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#be185d" opacity="0.7">
+    Database: 40+ healing songs • 10 emotion categories • External streaming
+  </text>
+  
+  <!-- Path 3: Video Conversation -->
+  <rect x="950" y="500" width="400" height="150" rx="15" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1150" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">
+    📹 Video Conversation Path
+  </text>
+  
+  <circle cx="1000" cy="560" r="25" fill="#8b5cf6"/>
+  <text x="1000" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Start
+  </text>
+  <text x="1000" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    Video Session
+  </text>
+  
+  <circle cx="1100" cy="560" r="25" fill="#8b5cf6"/>
+  <text x="1100" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Meet
+  </text>
+  <text x="1100" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    AI Guru
+  </text>
+  
+  <circle cx="1200" cy="560" r="25" fill="#8b5cf6"/>
+  <text x="1200" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Talk
+  </text>
+  <text x="1200" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    Real-time
+  </text>
+  
+  <circle cx="1300" cy="560" r="25" fill="#8b5cf6"/>
+  <text x="1300" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">
+    Heal
+  </text>
+  <text x="1300" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    Deep Support
+  </text>
+  
+  <text x="1150" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    Features: Live video, emotion-aware AI, personalized greetings
+  </text>
+  <text x="1150" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8" opacity="0.7">
+    Requires: Tavius API • Embedded or external viewing • Session management
+  </text>
+  
+  <!-- Continuation Options -->
+  <rect x="50" y="700" width="1300" height="100" rx="15" fill="#f9fafb" stroke="#d1d5db" stroke-width="1" filter="url(#shadow)"/>
+  <text x="700" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+    Journey Continuation Options
+  </text>
+  
+  <rect x="100" y="750" width="200" height="40" rx="8" fill="#10b981"/>
+  <text x="200" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+    Share Another Feeling
+  </text>
+  
+  <rect x="350" y="750" width="200" height="40" rx="8" fill="#3b82f6"/>
+  <text x="450" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+    Continue Breathing
+  </text>
+  
+  <rect x="600" y="750" width="200" height="40" rx="8" fill="#8b5cf6"/>
+  <text x="700" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+    Extend Video Session
+  </text>
+  
+  <rect x="850" y="750" width="200" height="40" rx="8" fill="#f59e0b"/>
+  <text x="950" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+    Explore More Music
+  </text>
+  
+  <rect x="1100" y="750" width="200" height="40" rx="8" fill="#ef4444"/>
+  <text x="1200" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+    Return Later
+  </text>
+  
+  <!-- Success Metrics -->
+  <rect x="50" y="830" width="1300" height="120" rx="15" fill="white" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="700" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065f46">
+    🎯 Success Outcomes & Emotional Wellness Goals
+  </text>
+  
+  <text x="200" y="885" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">
+    Immediate Relief
+  </text>
+  <text x="200" y="900" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Feeling heard & validated
+  </text>
+  <text x="200" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Emotional acknowledgment
+  </text>
+  <text x="200" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Reduced isolation
+  </text>
+  
+  <text x="500" y="885" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">
+    Coping Skills
+  </text>
+  <text x="500" y="900" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Breathing techniques learned
+  </text>
+  <text x="500" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Music therapy discovered
+  </text>
+  <text x="500" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Self-care practices
+  </text>
+  
+  <text x="800" y="885" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">
+    Long-term Wellness
+  </text>
+  <text x="800" y="900" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Regular emotional check-ins
+  </text>
+  <text x="800" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Healthy coping mechanisms
+  </text>
+  <text x="800" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Emotional intelligence growth
+  </text>
+  
+  <text x="1100" y="885" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">
+    Community Impact
+  </text>
+  <text x="1100" y="900" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Reduced mental health stigma
+  </text>
+  <text x="1100" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Accessible emotional support
+  </text>
+  <text x="1100" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    • Healing through technology
+  </text>
+  
+  <!-- Flow Arrows -->
+  <line x1="230" y1="120" x2="300" y2="120" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="120" x2="520" y2="120" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="680" y1="120" x2="740" y2="120" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="900" y1="120" x2="960" y2="120" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Response to paths arrows -->
+  <line x1="180" y1="390" x2="250" y2="500" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="620" y1="390" x2="700" y2="500" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1060" y1="390" x2="1150" y2="500" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Path continuation arrows -->
+  <line x1="125" y1="585" x2="175" y2="585" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="225" y1="585" x2="275" y2="585" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="325" y1="585" x2="375" y2="585" stroke="#0284c7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="575" y1="585" x2="625" y2="585" stroke="#ec4899" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="675" y1="585" x2="725" y2="585" stroke="#ec4899" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="775" y1="585" x2="825" y2="585" stroke="#ec4899" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="1025" y1="585" x2="1075" y2="585" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1125" y1="585" x2="1175" y2="585" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1225" y1="585" x2="1275" y2="585" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>
