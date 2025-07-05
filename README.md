@@ -12,8 +12,7 @@
     <a href="#demo">Demo</a> •
     <a href="#installation">Installation</a> •
     <a href="#api-setup">API Setup</a> •
-    <a href="#usage">Usage</a> •
-    <a href="#contributing">Contributing</a>
+    <a href="#usage">Usage</a>
   </p>
   
   <p align="center">
@@ -79,7 +78,7 @@ To create a safe, judgment-free digital space where anyone can share their emoti
 ## 🚀 Demo
 
 ### Live Application
-Visit the live demo: [Sound Heal Demo](https://your-demo-url.com)
+Visit the live demo: [soundheal.online](https://soundheal.online)
 
 ### Feature Showcase
 
@@ -343,10 +342,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Need help or have questions?
 
-- 📧 **Email**: support@soundheal.app
-- 💬 **Discord**: [Join our community](https://discord.gg/soundheal)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/sound-heal/issues)
-- 📖 **Documentation**: [Full Documentation](https://docs.soundheal.app)
+- 📧 **Email**: lochanacharya0@gmail.com
+- 🌐 **Website**: [soundheal.online](https://soundheal.online)
+- 📖 **Documentation**: Check the `/docs` folder for detailed guides
 
 ---
 
