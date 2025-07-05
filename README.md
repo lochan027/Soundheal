@@ -1,7 +1,7 @@
 # 🎵 Sound Heal
 
 <div align="center">
-  <img src="public/thumbnail.svg" alt="Sound Heal - Your Emotional Companion" width="600" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+  <img src="public/life.jpg" alt="Sound Heal - Your Emotional Companion" width="600" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
   
   <p align="center">
     <strong>A safe space to share your feelings and receive AI-powered comfort, understanding, and musical healing through sound therapy</strong>
